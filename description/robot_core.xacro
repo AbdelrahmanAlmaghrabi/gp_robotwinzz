@@ -182,28 +182,32 @@
   <gazebo reference="base_link">
     <material>Gazebo/Orange</material>
   </gazebo>
+  
   <gazebo reference="right_r_wheel_link">
     <material>Gazebo/Gray</material>
   </gazebo>
+  
   <gazebo reference="right_f_wheel_link">
     <material>Gazebo/Gray</material>
   </gazebo>
+  
   <gazebo reference="left_f_wheel_link">
     <material>Gazebo/Gray</material>
   </gazebo>
+
   <gazebo reference="left_r_wheel_link">
     <material>Gazebo/Gray</material>
   </gazebo>
 
-
+  
   
   <gazebo>
     <plugin filename="libgazebo_ros_diff_drive.so" name="front_wheel">
       <!-- Wheel Information -->
       <left_joint>base_left_wheel_f_joint</left_joint>
       <right_joint>base_right_wheel_f_joint</right_joint>
-      <wheel_separation>0.064</wheel_separation>
-      <wheel_diameter>1.6</wheel_diameter>
+      <wheel_separation>0.64</wheel_separation>
+      <wheel_diameter>0.16</wheel_diameter>
       <!-- Limit -->
       <max_wheel_torque>200</max_wheel_torque>
       <max_wheel_acceleration>10.0</max_wheel_acceleration>
@@ -222,8 +226,8 @@
       <!-- Wheel Information -->
       <left_joint>base_left_wheel_r_joint</left_joint>
       <right_joint>base_right_wheel_r_joint</right_joint>
-      <wheel_separation>0.064</wheel_separation>
-      <wheel_diameter>1.6</wheel_diameter>
+      <wheel_separation>0.64</wheel_separation>
+      <wheel_diameter>0.16</wheel_diameter>
       <!-- Limit -->
       <max_wheel_torque>200</max_wheel_torque>
       <max_wheel_acceleration>10.0</max_wheel_acceleration>
